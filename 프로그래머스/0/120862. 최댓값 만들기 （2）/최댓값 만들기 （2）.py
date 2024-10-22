@@ -1,5 +1,5 @@
 def solution(numbers):
-    max_product = -99999999999999999999999999
+    max_product = -100000000
 
     for i in range(len(numbers) - 1):
         for j in range(i + 1, len(numbers)):
