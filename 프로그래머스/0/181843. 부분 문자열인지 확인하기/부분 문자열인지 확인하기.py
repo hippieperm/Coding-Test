@@ -1,2 +1,6 @@
 def solution(myString, target):
-    return 1 if target in myString else 0
+    result = 0
+    for i in range(len(myString) - len(target) + 1):
+        if myString[i:i + len(target)] == target:
+            result = 1
+    return result
