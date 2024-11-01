@@ -1,11 +1,9 @@
 def solution(n):
     answer = ''
-    su = '수'
-    park = '박'
-
-    for i in range(n):
-        if i % 2 == 0:
-            answer += su
-        else:
-            answer += park
+    for i in range(n // 2):
+        answer += "수박"
+    
+    if n % 2 == 1:
+        answer += "수"
+    
     return answer
